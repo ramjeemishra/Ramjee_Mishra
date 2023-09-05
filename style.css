@@ -953,3 +953,38 @@ img{
         display: none;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* last */
+
+  .last{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* //whatsapp// */
+.com{
+    display: flex;
+}
+  .wat{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width:800px) {
+   .wat{
+    width: 50px;
+    height: 50px;
+} 
+}
+
