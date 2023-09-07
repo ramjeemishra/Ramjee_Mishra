@@ -143,12 +143,29 @@ nav ul li a:hover{
     text-align: center;
 }
 .new-desk{
-    background: rgba(67, 66, 66, 0.688);
+    background: rgba(67, 66, 66, 0);
     width: 100vw;
-    height: auto;
+    height: fit-content;
 }
-
-
+.new-desk h2{
+    padding-top: 23px;
+    margin-bottom: 43px;
+    color: #434043f8;
+    cursor:grab;
+    margin-left: 40%;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.new-desk h2:hover{
+    color: cyan;
+    font-weight: 700;
+    transition: 0.9s;
+    box-shadow: 0px 3px 2px cyan;
+    border-radius: 25px;
+}
 
 
 
@@ -366,8 +383,8 @@ input {
 }
 
 .contner {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     max-width: 600px;
     max-height: 600px;
     display: flex;
@@ -375,9 +392,11 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 444px;
+    margin-left: 30%;
 }
-
+.back{
+    /* background:#4ab6da00; */
+}
 .cards {
 
     position: relative;
@@ -572,7 +591,7 @@ input {
 
 
 
-@media (max-width:2100px) {
+/* @media (max-width:2100px) {
     .contner{
         margin-left: 600px;
     }
@@ -581,12 +600,12 @@ input {
     .contner{
         margin-left: 400px;
     }
-}
-@media (max-width:1400px) {
+} */
+@media (max-width:920px) {
     .contner{
-        margin-left: 45px;
+        margin-left: 14%;
     }
-}
+} 
 
 
 @media (max-width:800px) {
@@ -595,7 +614,7 @@ input {
 
     }
     .contner{
-        margin-left: 6px;
+        margin-left: 25%;
         display: none;
     }
 }
@@ -739,7 +758,7 @@ h2{
 /* //card2// */
 .kods{
         display: flex;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
 }
 
 .containerr{
@@ -752,8 +771,9 @@ h2{
     align-items: center;
     gap: 80px;
     flex-wrap: wrap;
-    margin-left: 16px;
+    /* margin-left: 16px; */
     /* overflow-x: scroll; */
+    margin-left: 27%;
 }
 .containerr .cardd{
     position: relative;
@@ -806,6 +826,7 @@ h2{
     box-shadow: 0 0 0 8px #333;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    margin-left: 2%;
 }
 .containerr .cardd:hover .textBx{
     transform: translateY(100%) rotateX(90deg);
@@ -901,12 +922,19 @@ img{
         overflow-x: scroll;
     }
     .new-desk{
-        background: rgba(67, 66, 66, 0.875);
+        background: rgba(67, 66, 66, 0.058);
         width: auto;
         height: 550px;
-    }    
+    }  
+    .new-desk h2{
+        margin-left: 25%;
+    }  
 }
-
+@media (max-width: 450px) {
+    .containerr{
+        margin-left: 13%;
+    }
+}
 
 
 
@@ -969,7 +997,11 @@ img{
     display: flex;
     justify-content: center;
     text-align: center;
+    border-top: 3px solid cyan;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
   }
+
 
   /* //whatsapp// */
 .com{
@@ -978,7 +1010,9 @@ img{
     height: fit-content;
     margin-top: 66px;
     margin-bottom: -10px;
+    margin-left: 43%;
 }
+
 .wat{
     width: 30px;
     height: 30px;
@@ -1008,20 +1042,23 @@ img{
     margin-bottom: 43px;
     color: #434043f8;
     cursor:grab;
-    margin-left: 33vw;
+    margin-left: 40%;
     width: fit-content;
     height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
 }
 .last h2:hover{
     color: cyan;
     font-weight: 700;
     transition: 0.9s;
-    box-shadow: 3px 3px 5px cyan;
-    
+    box-shadow: 0px 3px 2px cyan;
+    border-radius: 25px;
 }
 .cll{
     color: white;
-    background: rgb(182, 164, 164);
+    background: rgb(86, 187, 255);
     border: 3px solid rgb(178, 239, 239);
     border-radius: 13px;
     box-shadow:  15px 15px 40px rgba(135, 129, 129, 0.5);
@@ -1054,6 +1091,8 @@ img{
     height: 100px;
     border-radius: 19px;
     border: 9px solid rgb(70, 73, 70);
+    cursor: grab;
+    transition: 0.4s;
 }
 .cl .ATOM{
     margin-top: 92px;
@@ -1070,8 +1109,23 @@ img{
     border: 9px solid cyan;
     box-shadow: 5px 5px 10px cyan;
 }
-
-@media (max-width: 440px ) {
+.cl button{
+    width: 53px;
+    height: 27px;
+    background: #323444;
+    border: 2px solid rgba(0, 255, 255, 0.852);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.cl button:hover{
+    background: cyan;
+    color: black;
+    transition: 0.7s;
+    box-shadow: 3px 5px 32px 0px rgb(0, 255, 255);
+}
+@media (max-width: 540px ) {
     .cll{
         display: none;
     }
@@ -1090,5 +1144,8 @@ img{
         width: fit-content;
         height: fit-content;
         font-style: inherit;
+    }
+    .cl button{
+        display: none;
     }
 }
