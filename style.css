@@ -352,6 +352,7 @@ nav .menu-btn i{
     }
     .bottom{
         margin-top: 602px;
+        display: none;
     }
 }
 
