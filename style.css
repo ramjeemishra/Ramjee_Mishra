@@ -1011,8 +1011,13 @@ img{
     margin-top: 66px;
     margin-bottom: -10px;
     margin-left: 43%;
+    border-top: 2px solid white;
+    border-radius: inherit;
 }
 
+.com img:hover{
+    cursor: pointer;
+}
 .wat{
     width: 30px;
     height: 30px;
@@ -1024,6 +1029,12 @@ img{
 } 
 .com{
     margin-left: 28vw;
+    border-top: 2px solid white;
+    border-radius: inherit;
+}
+.com img{
+    width: 25px;
+    height: fit-content;
 }
 }
 
@@ -1107,7 +1118,7 @@ img{
 }
 .cl img:hover{
     border: 9px solid cyan;
-    box-shadow: 5px 5px 10px cyan;
+    box-shadow: 5px 5px 8px rgb(62, 157, 158);
 }
 .cl button{
     width: 53px;
