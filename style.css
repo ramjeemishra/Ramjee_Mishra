@@ -22,9 +22,12 @@ nav .menu-btn i{
     display: none;
 }
 nav .logo{
-    font-size: 33px;
-    color: #fff;
+    padding-left: 40px;
+    font-size: 43px;
+    color: rgb(255, 0, 153);
     font-weight: 600px;
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
+    cursor: grabbing;
 }
 nav ul{
     display: flex;
@@ -91,6 +94,10 @@ nav ul li a:hover{
     text-align: center;
     font-weight: bold;
     font-size: 3em;
+    cursor: grab;
+}
+.text h6{
+    font-family: League Spartan,Helvetica,Arial,sans-serif;
 }
 @media (max-width:700px) {
     .text{
@@ -98,19 +105,19 @@ nav ul li a:hover{
     }
     
 }
+
 .text1{
     color: rgb(165, 179, 165);
     background: rgba(0, 0, 0, 0);
     text-align: center;
     font-weight: bold;
     font-size: 33px;
+    cursor: grab;
 }
 
 
 
-
 .heart{
-    /* margin-bottom: 289px; */
     width: 100vw;
     height: 100vh;
 }
@@ -143,9 +150,9 @@ nav ul li a:hover{
     text-align: center;
 }
 .new-desk{
-    background: rgba(67, 66, 66, 0);
-    width: 100vw;
-    height: fit-content;
+    background: #f3f3f3;
+    width: 100%;
+    height: 100vh;
 }
 .new-desk h2{
     padding-top: 23px;
@@ -160,10 +167,10 @@ nav ul li a:hover{
     padding-bottom: 15px;
 }
 .new-desk h2:hover{
-    color: cyan;
+    color: rgb(74, 72, 72);
     font-weight: 700;
     transition: 0.9s;
-    box-shadow: 0px 3px 2px cyan;
+    box-shadow: 0px 3px 2px rgb(0, 0, 0);
     border-radius: 25px;
 }
 
@@ -295,6 +302,7 @@ nav .menu-btn i{
     align-items: center;
     justify-content: center;
     position: fixed;
+    padding-bottom: 43px;
 }
 .uul{
     display: flex;
@@ -660,13 +668,13 @@ h2{
 
 
 .last{
-    background: #f5070700;
+    background: #ff000000;
     height: 100%;
     width: 100vw;
     color: white;
     font-family: 'Anton', sans-serif;
     font-size: 19px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     /* border-top: 5px solid black; */
 }
 .gif{
@@ -758,12 +766,12 @@ h2{
 
 /* //card2// */
 .kods{
-        display: flex;
+        display: block;
         /* overflow-x: scroll; */
 }
 
 .containerr{
-    width: 380px;
+    width: 100vw;
     height: 450px;
     margin-top: 33px;
     position: relative;
@@ -776,142 +784,42 @@ h2{
     /* overflow-x: scroll; */
     margin-left: 27%;
 }
-.containerr .cardd{
-    position: relative;
-    width: 300px;
-    height: 400px;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* margin-left: 100px; */
+.containerr .outlok{
+    width: 310px;
+    height: auto;
+    background: #ffffff;
+    /* border: 3px solid black; */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.containerr .cardd .imgBx,
-.containerr .cardd .textBx{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
+.containerr img{
+    padding-left: 55px;
+    width: 250px;
+    height: 250px;
 }
-.containerr .cardd .imgBx{
-    background: #ffff;
-    height: 120px;
-    z-index: 1;
-    transform-origin: bottom;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.containerr .cardd:hover .imgBx{
-    transform: translateY(-100%) rotateX(90deg);
-}
-.containerr .cardd .textBx{
-    height: 280px;
-    background: var(--clr);
-    border-top: 8px solid #333;
-    transform-origin: top;
-    transition-delay: 0.5s;
-    align-items: flex-end;
-    overflow: hidden;
-    border-radius: 12px;
-}
-.containerr .cardd .textBx h2{
-    font-weight: 500;
-    text-transform: uppercase;
-    background: #fff;
-    padding: 5px 25px;
-    box-shadow: 0 0 0 8px #333;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    margin-left: 2%;
-}
-.containerr .cardd:hover .textBx{
-    transform: translateY(100%) rotateX(90deg);
-}
-.containerr .cardd .imgBx::before{
-    content: '';
-    position: absolute;
-    width: 144px;
-    height: 74px;
-    bottom: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fffffffc;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
-    z-index: 1;
-}
-.containerr .cardd .textBx::before{
-   content: '';
-   position: absolute;
-   width: 160px;
-    height: 80px;
-    background: #333;
-    top: -8px;
-    border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 80px;
-}
-.containerr .cardd .imgBx img{
-    position: relative;
-    top: 50px;
-    z-index: 100;
-}
-img{
-    width: 60px;
-    height: 80px;
-    border-radius: 5px;
-    border: #333;
-}
-.containerr .cardd .content{
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25px;
-    gap: 10px;
-    transition-delay: 0s;
-    transition: 0.5s;
-    opacity: 0;
-}
-.containerr .cardd:hover .content{
-    opacity: 1;
-    transition-delay: 0.5s;
-}
-.containerr .cardd .content h2{
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--clr);
-}
-.containerr .cardd .content p{
-    color: #fff;
+.outlok .tite h6{
     text-align: center;
-    font-size: x-large;
-    font-family:monospace;
+    font-size: .75rem;
+    color: #404457;
+    padding-bottom: 12px;
+    padding-top: 12px;
 }
-.containerr .cardd .content a{
-    color: #ffffff;
-    font-size: larger;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
-    margin-top: 30px;
-    background: rgba(126, 252, 0, 0.762);
-    font-weight: 600;
-    border-radius: 9px;
+.outlok button{
+    justify-content: center;
+    margin-left: 119px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #404457;
+    color: #f3f3f3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
-.cardd{
-    border-radius: 22px;
-    margin-top: 22px;
+.outlok{
+    padding-top: 15px;
 }
-.textBx h2{
-    color: #323444;
-}
+
+
 @media (max-width:2600px) {
     .containerr{
         display: none;
@@ -920,12 +828,12 @@ img{
 @media (max-width:800px) {
     .containerr{
         display: block;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
     }
     .new-desk{
-        background: rgba(67, 66, 66, 0.058);
-        width: auto;
-        height: 550px;
+        background: rgb(214, 194, 198);
+        /* width: auto; */
+        height: 100vh;
     }  
     .new-desk h2{
         margin-left: 25%;
@@ -942,48 +850,7 @@ img{
 
 
 
-.hreo{
-    color: #fff;
-    position:absolute;
-    top: 19vh;
-    display: block;
-  }
-  .contu{
-    width: 300px;
-    height: 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fbfbfc;
-    margin-left: 203px;
-  }
-  .lock{
-    width: 100%;
-    height: 100%;
-    background: rgba(11, 203, 203, 0.184);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(40px) ;
-  }
   
-.lock span{
-    font-size: 70px;
-    width: 110px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-  }
-
-  @media( max-width:970px) {
-    .hreo{
-        display: none;
-    }
-  }
-
-
-
 
 
 
@@ -1001,11 +868,19 @@ img{
     border-top: 3px solid cyan;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    background: rgb(43, 45, 57);
   }
 
 
   /* //whatsapp// */
+  footer{
+    width: 100vw;
+    height: fit-content;
+    background: #15161c;
+  }
 .com{
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -1015,7 +890,10 @@ img{
     border-top: 2px solid white;
     border-radius: inherit;
 }
-
+footer h3{
+    font-size: .75rem;
+    padding-bottom: 25px;
+}
 .com img:hover{
     cursor: pointer;
 }
