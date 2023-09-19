@@ -114,6 +114,9 @@ nav ul li a:hover{
     #background-video{
         width: 390px;
     }
+    nav .logo{
+        padding-left: 0%;
+    }
 }
 
 .text1{
