@@ -67,7 +67,7 @@ nav ul li a:hover{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     object-fit: cover;
     z-index: -1;
@@ -151,7 +151,7 @@ nav ul li a:hover{
 }
 .new-desk{
     background: #f3f3f3;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 .new-desk h2{
@@ -173,68 +173,6 @@ nav ul li a:hover{
     box-shadow: 0px 3px 2px rgb(0, 0, 0);
     border-radius: 25px;
 }
-
-
-
-
-/* clock */
-
-/* .clock{
-    width: 300px;
-    height: 300px;
-    position: relative;
-    background-color: lightgray;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle,rgb(0, 213, 255),rgb(0, 255, 98));
-    box-shadow: 0  0 90px rgb(4, 6, 4);
-}
-.number{
-    transform: rotate(calc(30deg * var(--n)));
-    position: absolute;
-    text-align: center;
-    inset: 20px;
-    font-size: 40px;
-}
-.number b{
-    transform: rotate(calc(-30deg * var(--n)));
-    display: inline-block;
-}
-.center-dot{
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(107, 142, 109);
-    border-radius: 50%;
-}
-.hour-hand{
-    width: 5px;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.844);
-}
-.hour-hand, .minute-hand, .second-hand{
-    rotate: 0;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
-    transform-origin: bottom;
-}
-.minute-hand{
-    width: 4px;
-    height: 90px;
-    background: radial-gradient(circle,rgb(255, 0, 106),rgb(248, 248, 4));
-
-}
-.second-hand{
-    width: 3px;
-    height: 110px;
-    background-color: rgb(13, 0, 255);
-} */
-
-
 
 
 
@@ -302,7 +240,7 @@ nav .menu-btn i{
     align-items: center;
     justify-content: center;
     position: fixed;
-    padding-bottom: 43px;
+    padding-bottom: 53px;
 }
 .uul{
     display: flex;
@@ -402,9 +340,6 @@ input {
     align-items: center;
     flex-direction: column;
     margin-left: 30%;
-}
-.back{
-    /* background:#4ab6da00; */
 }
 .cards {
 
@@ -772,16 +707,12 @@ h2{
 
 .containerr{
     width: 100vw;
-    height: 450px;
+    height: auto;
     margin-top: 33px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    flex-wrap: wrap;
-    /* margin-left: 16px; */
-    /* overflow-x: scroll; */
     margin-left: 27%;
 }
 .containerr .outlok{
@@ -832,7 +763,6 @@ h2{
     }
     .new-desk{
         background: rgb(214, 194, 198);
-        /* width: auto; */
         height: 100vh;
     }  
     .new-desk h2{
