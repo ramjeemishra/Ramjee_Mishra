@@ -5,7 +5,7 @@
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 nav{
@@ -39,7 +39,7 @@ nav ul li{
     margin: 0px 107px;
 }
 
-nav ul li a {
+nav ul li a{
     color: rgba(214, 135, 214, 0.641);
     font-size: 23px;
     font-weight: 500;
@@ -230,10 +230,24 @@ nav .menu-btn i{
 }
 
 
+/* clock */
+.hreo{
+    width: fit-content;
+    font-size: 1.95rem;
+    color: white;
+    background: linear-gradient(#10d57c,#1072d5a7);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 2%;
+}
 
-
-
-
+@media (max-width:1000px){
+    .hreo{
+        display: none;
+    }
+}
 
 
 
@@ -245,7 +259,7 @@ nav .menu-btn i{
 .bottom{
     width: 100vw;
     height: 44px;
-    margin-top: 582px;
+    margin-top: 502px;
     background: rgba(0, 0, 0, 0);
     display: flex;
     text-align: center;
@@ -253,7 +267,7 @@ nav .menu-btn i{
     align-items: center;
     justify-content: center;
     position: fixed;
-    padding-bottom: 53px;
+    /* padding-bottom: 33px; */
 }
 .uul{
     display: flex;
@@ -343,8 +357,8 @@ input {
 }
 
 .contner {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     max-width: 600px;
     max-height: 600px;
     display: flex;
@@ -354,7 +368,7 @@ input {
     flex-direction: column;
     margin-left: 30%;
 }
-.cards {
+.cards{
 
     position: relative;
     height: 500px;
@@ -364,8 +378,7 @@ input {
     transform-style: preserve-3d;
 }
 
-.cards label {
-
+.cards label{
     position: absolute;
     width: 380px;
     left: 0;
@@ -376,7 +389,6 @@ input {
 }
 
 .cards .card{
-
     position: relative;
     height: 100%;
     background-color: #323444;
@@ -385,13 +397,11 @@ input {
 }
 
 .card .image{
-
     display: flex;
     justify-content: space-between;
 }
 
 .card .image img{
-
     border-radius: 5px;
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
     margin-top: 23px;
@@ -401,12 +411,10 @@ input {
 }
 
 .card .image .dots{
-
     text-align: center;
 }
 
 .dots div{
-
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -414,34 +422,28 @@ input {
 }
 
 .dots div:nth-child(1){
-
     background-color: var(--current-color1);
 }
 
 .dots div:nth-child(2){
-
     background-color: #5B85F9;
 }
 
 .dots div:nth-child(3){
-
     background-color: #000;
 }
 
 .card .infos{
-
     display: block;
     text-align: end;
     padding-top: 14px;
 }
 
 .infos span{
-
     display: block;
 }
 
 .infos .name{
-
     font-size: 30px;
     color: var(--current-color1);
     letter-spacing: 8px;
@@ -451,14 +453,12 @@ input {
 }
 
 .infos .lorem{
-
     font-size: 15.5px;
     color: #ECEAED;
     letter-spacing: 3px;
 }
 
 .card .btn-contact{
-
     width: 100%;
     height: 60px;
     margin: 35px auto;
@@ -475,7 +475,6 @@ input {
 }
 
 .card .socials{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -483,7 +482,6 @@ input {
 }
 
 .socials i{
-
     font-size: 25px;
     transition: all .7s ease;
     color: var(--current-color2);
@@ -548,7 +546,7 @@ input {
 
 
 
-/* @media (max-width:2100px) {
+@media (max-width:2100px) {
     .contner{
         margin-left: 600px;
     }
@@ -557,7 +555,7 @@ input {
     .contner{
         margin-left: 400px;
     }
-} */
+}
 @media (max-width:920px) {
     .contner{
         margin-left: 14%;
@@ -713,9 +711,9 @@ h2{
 
 
 /* //card2// */
-.kods{
+/* .kods{
         display: block;
-        /* overflow-x: scroll; */
+        overflow-x: scroll;
 }
 
 .containerr{
@@ -732,7 +730,6 @@ h2{
     width: 310px;
     height: auto;
     background: #ffffff;
-    /* border: 3px solid black; */
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -772,7 +769,6 @@ h2{
 @media (max-width:800px) {
     .containerr{
         display: block;
-        /* overflow-x: scroll; */
     }
     .new-desk{
         background: rgb(214, 194, 198);
@@ -787,7 +783,7 @@ h2{
         margin-left: 13%;
     }
 }
-
+ */
 
 
 
