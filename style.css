@@ -165,7 +165,7 @@ nav ul li a:hover{
 .new-desk{
     background: #f3f3f3;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 .new-desk h2{
     padding-top: 23px;
@@ -187,7 +187,11 @@ nav ul li a:hover{
     border-radius: 25px;
 }
 
-
+@media (max-width: 980px){
+    .new-desk h2{
+        margin-left: 30%;
+    }
+}
 
 
 
@@ -711,85 +715,100 @@ h2{
 
 
 /* //card2// */
-/* .kods{
-        display: block;
-        overflow-x: scroll;
-}
 
-.containerr{
-    width: 100vw;
-    height: auto;
-    margin-top: 33px;
-    position: relative;
+
+.wrapperr{
+    width: 800px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: 27%;
-}
-.containerr .outlok{
-    width: 310px;
-    height: auto;
-    background: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.containerr img{
-    padding-left: 55px;
-    width: 250px;
-    height: 250px;
-}
-.outlok .tite h6{
-    text-align: center;
-    font-size: .75rem;
-    color: #404457;
-    padding-bottom: 12px;
-    padding-top: 12px;
-}
-.outlok button{
-    justify-content: center;
-    margin-left: 119px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #404457;
-    color: #f3f3f3;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-.outlok{
-    padding-top: 15px;
-}
-
-
-@media (max-width:2600px) {
-    .containerr{
-        display: none;
+    justify-content: space-between;
+    display: none;
+  }
+  .wrapperr .card{
+    background: #fff;
+    /* width: calc(33% - 20px); */
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapperr .card .circle{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    cursor: default;
+  }
+  .card .circle .box,
+  .card .circle .box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .card .circle .box{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition: all 0.2s;
+  }
+  .card .circle:hover .box{
+    transform: translate(-50%, -50%) scale(0.91);
+  }
+  .card .circle .box span,
+  .wrapperr .card .text{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .circle .box span{
+    font-size: 38px;
+    font-family: sans-serif;
+    font-weight: 600;
+    transform: translate(-45%, -45%);
+    transition: all 0.1s;
+  }
+  .card .circle:hover .box span{
+    transform: translate(-45%, -45%) scale(1.09);
+  }
+  .card .text{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  @media(max-width: 773px){
+    .wrapperr{
+      max-width: 100vw;
+      display: block;
+      /* display: flex; */
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
     }
-}
-@media (max-width:800px) {
-    .containerr{
-        display: block;
+    .wrapperr .card{
+      width: calc(50% - 20px);
     }
-    .new-desk{
-        background: rgb(214, 194, 198);
-        height: 100vh;
-    }  
-    .new-desk h2{
-        margin-left: 25%;
-    }  
-}
-@media (max-width: 450px) {
-    .containerr{
-        margin-left: 13%;
+  }
+  @media(max-width: 545px){
+    .wrapperr{
+      max-width: 100vw;
     }
-}
- */
+    .wrapperr .card{
+      width: 390px;
+    }
+  }
 
 
 
 
 
-  
+
+
 
 
 
@@ -977,4 +996,107 @@ footer h3{
     .cl button{
         display: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCbar */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animate 5s linear infinite; /* Updated animation name */
+}
+
+@keyframes animate {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
 }
