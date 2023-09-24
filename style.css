@@ -837,8 +837,8 @@ h2{
     background: #15161c;
   }
 .com{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -851,6 +851,7 @@ h2{
 footer h3{
     font-size: .75rem;
     padding-bottom: 25px;
+    margin-left: -5%;
 }
 .com img:hover{
     cursor: pointer;
@@ -868,6 +869,8 @@ footer h3{
     margin-left: 28vw;
     border-top: 2px solid white;
     border-radius: inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .com img{
     width: 25px;
