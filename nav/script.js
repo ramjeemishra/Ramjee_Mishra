@@ -10,6 +10,16 @@ document.getElementById("submit-button").addEventListener("click", function() {
         contentDiv.classList.remove("hidden");
         passwordForm.style.display = "none";
     } else {
-        alert("Incorrect password. Please try again.");
+        alert("Incorrect password. Please don't try again😅.");
     }
 });
+
+
+
+
+
+
+
+
+
+
