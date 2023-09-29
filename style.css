@@ -7,7 +7,10 @@
     text-decoration: none;
     /* overflow-x: hidden; */
 }
-
+body{
+    
+    background:#22232c;
+}
 nav{
     background: rgb(0, 0, 0);
     height: 80px;
@@ -140,6 +143,25 @@ nav ul li a:hover{
     height: 100vh;
 }
 
+.custom-shape-divider-bottom-1696012753 {
+    position: absolute;
+    bottom: -22%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1696012753 svg {
+    position: relative;
+    display: block;
+    width: calc(206% + 1.3px);
+    height: 500px;
+}
+
+.custom-shape-divider-bottom-1696012753 .shape-fill {
+    fill: #00FFF2;
+}
 .text2{
     background-color: #fff;
 }
@@ -195,6 +217,9 @@ nav ul li a:hover{
 @media (max-width: 980px){
     .new-desk h2{
         margin-left: 30%;
+    }
+    .heart div svg{
+        margin-top: 96%;
     }
 }
 @media (max-width: 480px){
