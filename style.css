@@ -26,7 +26,7 @@ nav .menu-btn i{
 nav .logo{
     padding-left: 40px;
     font-size: 43px;
-    color: rgb(255, 0, 153);
+    color: rgb(0, 217, 255);
     font-weight: 600px;
     font-family: League Spartan,Helvetica,Arial,sans-serif;
     cursor: grabbing;
@@ -118,6 +118,9 @@ nav ul li a:hover{
     }
     nav .logo{
         padding-left: 0%;
+    }
+    #background-video{
+        height: 100vh;
     }
 }
 
