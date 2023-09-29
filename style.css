@@ -64,7 +64,6 @@ nav ul li a:hover{
 
 
 
-
 #background-video {
     position: fixed;
     top: 0;
@@ -112,6 +111,7 @@ nav ul li a:hover{
 @media (max-width:400px) {
     nav{
         width: 100vw;
+        position: fixed;
     }
     #background-video{
         width: 390px;
@@ -194,6 +194,11 @@ nav ul li a:hover{
         margin-left: 30%;
     }
 }
+@media (max-width: 480px){
+    .new-desk{
+        display: none;
+    }
+}
 
 
 
@@ -216,7 +221,8 @@ nav ul{
     display: block;
     text-align: center;
     left: -100%;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
+    border-right: 6px solid #00e1ff;
 }
 #click:checked ~ ul{
     left: 0%;
@@ -803,6 +809,9 @@ h2{
     .wrapperr .card{
       width: 100vw;
     }
+    .por{
+        display: none;
+    }
   }
 
 
@@ -1072,7 +1081,7 @@ footer h3{
     width: 10px;
     /* height: 100%; */
     background: linear-gradient(to top, #008aff, #00ffe7);
-    animation: animate 5s linear infinite; /* Updated animation name */
+    animation: animate 25s linear infinite; /* Updated animation name */
 }
 
 @keyframes animate {
