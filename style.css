@@ -7,12 +7,18 @@
     text-decoration: none;
     /* overflow-x: hidden; */
 }
-body{
-    
-    background:#22232c;
+html{
+    scroll-behavior: smooth;
+}
+.fik{
+    background: url(images/v1016-b-09.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
 }
 nav{
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.099);
     height: 80px;
     display: flex;
     align-items: center;
@@ -67,16 +73,6 @@ nav ul li a:hover{
 
 
 
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
 
   .ram{
     width: 119px;
@@ -116,15 +112,11 @@ nav ul li a:hover{
         width: 100vw;
         position: fixed;
     }
-    #background-video{
-        width: 390px;
-    }
+
     nav .logo{
         padding-left: 0%;
     }
-    #background-video{
-        height: 100vh;
-    }
+
 }
 
 .text1{
@@ -143,25 +135,6 @@ nav ul li a:hover{
     height: 100vh;
 }
 
-.custom-shape-divider-bottom-1696012753 {
-    position: absolute;
-    bottom: -22%;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1696012753 svg {
-    position: relative;
-    display: block;
-    width: calc(206% + 1.3px);
-    height: 500px;
-}
-
-.custom-shape-divider-bottom-1696012753 .shape-fill {
-    fill: #00FFF2;
-}
 .text2{
     background-color: #fff;
 }
@@ -170,7 +143,9 @@ nav ul li a:hover{
     display: none;
 }
 
-
+.heart svg{
+    margin-top: 3.8%;
+}
 
 
 #toggleBtn{
@@ -218,7 +193,7 @@ nav ul li a:hover{
     .new-desk h2{
         margin-left: 30%;
     }
-    .heart div svg{
+    .heart svg{
         display: none;
     }
 }
