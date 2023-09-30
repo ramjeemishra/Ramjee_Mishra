@@ -219,7 +219,7 @@ nav ul li a:hover{
         margin-left: 30%;
     }
     .heart div svg{
-        margin-top: 96%;
+        display: none;
     }
 }
 @media (max-width: 480px){
