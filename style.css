@@ -111,6 +111,7 @@ nav ul li a:hover{
     nav{
         width: 100vw;
         position: fixed;
+        background: #000;
     }
 
     nav .logo{
@@ -141,7 +142,7 @@ nav ul li a:hover{
     padding-top: 0;
     display: none;
     border-radius: 100%;
-    margin-top: 28vh;
+    margin-top: 15vh;
     margin-left: 72vw;
     animation: beat 1.5s infinite;
     transform-origin: center;

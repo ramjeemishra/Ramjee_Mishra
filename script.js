@@ -124,3 +124,35 @@ let options = {
   $(".react .bar").circleProgress({
     value: 0.60
   });
+
+
+
+
+
+
+
+
+
+
+
+// button working
+
+
+
+  // const homeButton = document.querySelector('.home-button');
+  // homeButton.addEventListener('click', () => {
+  //     window.scrollTo({
+  //         top: 0,
+  //         behavior: 'smooth'
+  //     });
+  // });
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Hide the preloader when the content is fully loaded
+    var preloader = document.querySelector(".preloader");
+    preloader.style.display = "none";
+});
