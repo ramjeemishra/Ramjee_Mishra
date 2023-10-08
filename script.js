@@ -152,7 +152,94 @@ let options = {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    // Hide the preloader when the content is fully loaded
     var preloader = document.querySelector(".preloader");
     preloader.style.display = "none";
 });
+
+
+
+
+
+
+
+
+// animate on scroll
+
+
+// let sections = document.querySelectorAll('section');
+
+// window.onscroll = () => {
+//   sections.forEach(sec => {
+//     let top = window.scrollY;
+//     let offset = sec.offsetTop - 150;
+//     let height = sec.offsetHeight;
+
+//     if (top >= offset && top < offset + height) {
+//       sec.classList.add('show.animate');
+//     }
+//     else{
+//       sec.classList.remove('show-animate');
+//     }
+//   })
+// }
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Function to display custom modal
+function openModal() {
+  document.getElementById('custom-modal').style.display = 'block';
+}
+
+// Function to close custom modal
+function closeModal() {
+  document.getElementById('custom-modal').style.display = 'none';
+}
+
+// Trigger custom modal when Ctrl+U is pressed
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+      openModal();
+  }
+});
+
+
