@@ -459,7 +459,7 @@ input {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 35%;
 }
 
 .cards {
@@ -642,22 +642,26 @@ input {
 
 @media (max-width:2100px) {
     .contner {
-        margin-left: 600px;
+        margin-left: 35%;
     }
 }
 
 @media (max-width:1800px) {
     .contner {
-        margin-left: 22%;
+        margin-left: 30%;
     }
 }
 
+@media (max-width:1120px) {
+    .contner {
+        margin-left: 18%;
+    }
+}
 @media (max-width:920px) {
     .contner {
-        margin-left: 14%;
+        margin-left: 15%;
     }
 }
-
 
 @media (max-width:800px) {
     .cards label {
@@ -666,7 +670,6 @@ input {
     }
 
     .contner {
-        margin-left: 25%;
         display: none;
     }
 }
