@@ -11,7 +11,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 /* CSS */
 .fik {
     background: url(images/v1016-b-09.jpg);
@@ -57,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgba(0, 255, 255, 0.337);
+    color: rgba(58, 228, 228, 0.337);
     font-size: 23px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -881,9 +880,15 @@ footer h3 {
     padding-bottom: 25px;
     margin-left: -5%;
 }
-
+.com #linkdin{
+    border-radius: 50%;
+}
+.com img{
+    filter: grayscale(100%);
+}
 .com img:hover {
     cursor: pointer;
+    filter: none;
 }
 
 .wat {
@@ -1317,3 +1322,47 @@ footer h3 {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+/* certificates */
+
+/* .cert{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hiden code */
+
+.hidden {
+    margin-top: 3%;
+    display: none;
+    z-index: 12;
+  }
+
+  /* Style for the close button */
+  .close-button {
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 10px;
+  }

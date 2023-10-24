@@ -243,3 +243,58 @@ document.addEventListener('keydown', function(event) {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("keydown", function(event) {
+  // Check if Ctrl (or Command) + Q is pressed
+  if (event.ctrlKey && event.key === "q") {
+    // Show the hidden div
+    document.getElementById("hiddenDiv").style.display = "block";
+    // Prevent the default browser behavior for Ctrl + Q (quitting the browser)
+    event.preventDefault();
+  }
+});
+
+// Close the div when the close button is clicked
+document.getElementById("closeButton").addEventListener("click", function() {
+  document.getElementById("hiddenDiv").style.display = "none";
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
