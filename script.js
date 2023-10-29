@@ -1,3 +1,52 @@
+        // JavaScript code for text animation
+        var phrases = ["Student and", "Developer"];
+        var phraseIndex = 0;
+        var charIndex = 0;
+        var outputElement = document.getElementById("output");
+
+        function typeText() {
+            var phrase = phrases[phraseIndex];
+            outputElement.textContent = phrase.slice(0, charIndex);
+            charIndex++;
+
+            if (charIndex > phrase.length) {
+                charIndex = 0;
+                phraseIndex++;
+                if (phraseIndex >= phrases.length) {
+                    phraseIndex = 0;
+                }
+            }
+
+            setTimeout(typeText, 270); // Adjust the speed (in milliseconds) of the animation here
+        }
+
+        // Start the animation
+        typeText();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let hrs = document.getElementById("hrs");
@@ -193,15 +242,15 @@ let options = {
 
 
 
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-});
+// document.addEventListener('contextmenu', function(event) {
+//   event.preventDefault();
+// });
 
-document.addEventListener('keydown', function(event) {
-  if (event.ctrlKey && event.key === 'u') {
-      event.preventDefault();
-  }
-});
+// document.addEventListener('keydown', function(event) {
+//   if (event.ctrlKey && event.key === 'u') {
+//       event.preventDefault();
+//   }
+// });
 
 
 
