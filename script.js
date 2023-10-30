@@ -1,5 +1,5 @@
         // JavaScript code for text animation
-        var phrases = ["Student and", "Developer"];
+        var phrases = ["Student and Developer"];
         var phraseIndex = 0;
         var charIndex = 0;
         var outputElement = document.getElementById("output");
@@ -242,15 +242,15 @@ let options = {
 
 
 
-// document.addEventListener('contextmenu', function(event) {
-//   event.preventDefault();
-// });
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
 
-// document.addEventListener('keydown', function(event) {
-//   if (event.ctrlKey && event.key === 'u') {
-//       event.preventDefault();
-//   }
-// });
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+  }
+});
 
 
 

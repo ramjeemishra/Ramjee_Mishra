@@ -39,7 +39,8 @@ nav .menu-btn i {
 nav .logo {
     padding-left: 40px;
     font-size: 43px;
-    color: rgb(0, 217, 255);
+    /* color: rgb(0, 217, 255); */
+    color: rgb(147 51 234);
     font-weight: 600px;
     font-family: League Spartan, Helvetica, Arial, sans-serif;
     cursor: grabbing;
@@ -150,7 +151,8 @@ nav ul li a:hover {
 }
 
 .text1 {
-    color: rgb(165, 179, 165);
+    /* color: rgb(165, 179, 165); */
+    color: rgb(147 51 234);
     background: rgba(0, 0, 0, 0);
     text-align: center;
     font-weight: bold;
