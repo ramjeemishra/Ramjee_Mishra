@@ -333,8 +333,9 @@ nav ul li a:hover {
 .hreo {
     width: fit-content;
     font-size: 1.95rem;
-    color: white;
-    background: linear-gradient(#10d57c, #1072d5a7);
+    color: rgb(167, 167, 167);
+    background: #404457;
+    /* background: linear-gradient(#10d57c, #1072d5a7); */
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-left: 20px;
