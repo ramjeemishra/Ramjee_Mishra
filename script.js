@@ -1,5 +1,5 @@
         // JavaScript code for text animation
-        var phrases = ["Student and Developer"];
+        var phrases = ["Student & Developer"];
         var phraseIndex = 0;
         var charIndex = 0;
         var outputElement = document.getElementById("output");
