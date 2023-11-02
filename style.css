@@ -141,6 +141,7 @@ nav ul li a:hover {
         display: flex;
     }
     .line h1{
+        display: block;
         color: white;
     }
 }
