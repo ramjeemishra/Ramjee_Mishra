@@ -6,7 +6,10 @@
     text-decoration: none;
     /* overflow-x: hidden; */
 }
-
+::selection {
+    background-color: red;
+    color: white;
+  }
 html {
     scroll-behavior: smooth;
 }
@@ -142,7 +145,7 @@ nav ul li a:hover {
     }
     .line h1{
         display: block;
-        color: white;
+        color: #ffffff;
     }
 }
 
