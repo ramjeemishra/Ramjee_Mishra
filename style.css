@@ -1348,12 +1348,17 @@ footer h3 {
     font-size: 23px;
     justify-content: left;
     margin: 0;
-    margin-left: -42px;
+    margin-left:9 -42px;
     font-family: "Courier New";
     color: lime;
     &:after {
         content: "|";
         animation: blink 500ms linear infinite alternate;
+    }
+}
+@media (max-width:700px) {
+    #typewriter{
+        font-size: 15px;
     }
 }
 
