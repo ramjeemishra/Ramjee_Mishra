@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤔🤔Guide Page🤔🤔</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            color: #ddd;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 12%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .guide-section {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .guide-section h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .guide-section p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .guide-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .g1 img {
+            width: 5%;
+            height: 5%;
+        }
+
+        .g1 img {
+            width: 10%;
+            height: 6%;
+        }
+
+        .pc-link {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 6px 6px 6px 6px;
+            margin-bottom: 12%;
+        }
+
+        .pc-link:hover {
+            color: aqua;
+        }
+
+
+        .mobile-link {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-size: larger;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 5px;
+            padding: 6px 6px 6px 6px;
+            margin-bottom: 12%;
+        }
+
+        .mobile-link:hover {
+            color: aqua;
+        }
+
+        @media (max-width:720px) {
+            .g1 img {
+                width: 35%;
+                height: 5%;
+            }
+
+            .g2 img {
+                width: 40%;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .pc-link {
+                display: none;
+            }
+        }
+
+        /* Media query for PC users */
+        @media (min-width: 721px) {
+            .mobile-link {
+                display: none;
+            }
+        }
+
+
+
+
+
+
+
+
+        .custom-modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .modal-content {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            /* position: fixed; */
+        }
+
+        .modal-content span {
+            font-size: 4rem;
+        }
+
+        .modal-content p {
+            color: rgb(255, 255, 255);
+            font-size: 3rem;
+            padding-top: 20%;
+            font-weight: 700;
+        }
+
+        .close {
+            color: cyan;
+            float: right;
+            font-size: 28px;
+            font-weight: bolder;
+            margin-right: 12%;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="custom-modal" id="custom-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>No don't try copy my site😂😂😂</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <a class="mobile-link" href="#g1">📱📱Only for Mobile Users📱📱</a>
+
+        <a class="pc-link" href="#g2">💻💻Only for PC Users💻💻</a>
+
+
+
+        <h1>Guide Page</h1>
+        <h3>📱📱 Mobile users📱📱</h3>
+        <div class="guide-section g1" id="g1">
+            <div class="step-number">1</div>
+            <h2>Chat app</h2>
+            <p>you can directly use my chat app by clicking on the jumping teddy on main page</p>
+            <a href="https://ramjeemishra.github.io/Ramjee_Mishra/"><img src="images/chatlogoo.png"
+                    alt="chatapp img"></a>
+        </div>
+
+
+
+        <h3>💻💻PC users💻💻</h3>
+        <div class="guide-section g2" id="g2">
+            <div class="step-number">2</div>
+            <h2>Play Star wars</h2>
+            <p>First go on *Home* page and click [ctrl + q] then, <br> you will get some instrucrion at bottom of
+                website </p>
+            <a href="https://ramjeemishra.github.io/Ramjee_Mishra/"><img src="images/g2.png" alt="star wars img"></a>
+        </div>
+
+        <div class="guide-section g2" id="g2">
+            <div class="step-number">3</div>
+            <h2>Codes</h2>
+            <p>You can simpily copy code given on home page and use it *prefered to PC user* </p>
+            <a href="https://ramjeemishra.github.io/Ramjee_Mishra/"><img src="images/code.png" alt="code img"></a>
+        </div>
+
+        <div class="guide-section g2" id="g2">
+            <div class="step-number">4</div>
+            <h2>Full screen</h2>
+            <p>you can view my site on *FullScreen* by clicking on <br> [ ctrl + f ].</p>
+            <!-- <img src="checkout.png" alt="Checkout"> -->
+        </div>
+
+        <!-- <div class="guide-section">
+            <div class="step-number">5</div>
+            <h2>Complete the Checkout Process</h2>
+            <p>Finally, fill out the required information and complete the checkout process to purchase your products.
+            </p>
+            <img src="complete-checkout.png" alt="Complete Checkout">
+        </div>
+    </div> -->
+
+
+    <script>
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
+
+
+
+
+
+
+        // Function to display custom modal
+        function openModal() {
+            document.getElementById('custom-modal').style.display = 'block';
+        }
+
+        // Function to close custom modal
+        function closeModal() {
+            document.getElementById('custom-modal').style.display = 'none';
+        }
+
+        // Trigger custom modal when Ctrl+U is pressed
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault();
+                openModal();
+            }
+        });
+
+
+
+
+
+
+
+        document.addEventListener('keydown', function (event) {
+            if (event.ctrlKey && event.key === 'f') { // Check if Ctrl + F is pressed
+                toggleFullScreen();
+            }
+        });
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
