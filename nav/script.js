@@ -58,3 +58,30 @@ function openModal() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'f') { // Check if Ctrl + F is pressed
+        toggleFullScreen();
+    }
+});
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
