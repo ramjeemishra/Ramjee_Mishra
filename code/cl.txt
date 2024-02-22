@@ -32,14 +32,14 @@ body{
     background: radial-gradient(circle,rgb(0, 213, 255),rgb(0, 255, 98));
     box-shadow: 0  0 90px rgb(4, 6, 4);
 }
-.number{
+.ram{
     transform: rotate(calc(30deg * var(--n)));
     position: absolute;
     text-align: center;
     inset: 20px;
     font-size: 40px;
 }
-.number b{
+.ram b{
     transform: rotate(calc(-30deg * var(--n)));
     display: inline-block;
 }
@@ -75,29 +75,35 @@ body{
     height: 110px;
     background-color: rgb(13, 0, 255);
 }
+          footer{
+            text-align: bottom;
+            margin-top: 50%;
+            color:white;
+        }
 </style>
 
 </head>
 <body>
     <div class="clock">
-        <div class="number" style="--n:1"><b>1</b></div>
-        <div class="number" style="--n:2"><b>2</b></div>
-        <div class="number" style="--n:3"><b>3</b></div>
-        <div class="number" style="--n:4"><b>4</b></div>
-        <div class="number" style="--n:5"><b>5</b></div>
-        <div class="number" style="--n:6"><b>6</b></div>
-        <div class="number" style="--n:7"><b>7</b></div>
-        <div class="number" style="--n:8"><b>8</b></div>
-        <div class="number" style="--n:9"><b>9</b></div>
-        <div class="number" style="--n:10"><b>10</b></div>
-        <div class="number" style="--n:11"><b>11</b></div>
-        <div class="number" style="--n:12"><b>12</b></div>
+        <div class="ram" style="--n:1"><b>1</b></div>
+        <div class="ram" style="--n:2"><b>2</b></div>
+        <div class="ram" style="--n:3"><b>3</b></div>
+        <div class="ram" style="--n:4"><b>4</b></div>
+        <div class="ram" style="--n:5"><b>5</b></div>
+        <div class="ram" style="--n:6"><b>6</b></div>
+        <div class="ram" style="--n:7"><b>7</b></div>
+        <div class="ram" style="--n:8"><b>8</b></div>
+        <div class="ram" style="--n:9"><b>9</b></div>
+        <div class="ram" style="--n:10"><b>10</b></div>
+        <div class="ram" style="--n:11"><b>11</b></div>
+        <div class="ram" style="--n:12"><b>12</b></div>
         <div class="hour-hand" id="hour-hand"></div>
         <div class="minute-hand" id="minute-hand"></div>
         <div class="second-hand" id="second-hand"></div>
         <div class="center-dot"></div>
     </div>
 
+    <footer id="down">© 2024 Ramjee_Mishra</footer>
 
     <script>
     const secondHand = document.getElementById("second-hand");
