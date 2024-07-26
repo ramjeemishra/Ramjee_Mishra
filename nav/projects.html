@@ -94,6 +94,28 @@
     </div>
 
     <div class="food-items">
+        <img src="image/moodmingle.png">
+        <div class="details">
+            <div class="details-sub">
+                <h5>MoodMingle</h5>
+            </div>
+            <p>Create your own password-protected chat room, ensuring your conversations remain confidential. Share your thoughts, feelings, and experiences with your matched partner, knowing you're in a safe and private space.
+            </p>
+            <button id="popupButton">Vew site</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <p>This site has backend work, so it can some minutes to open</p>
+        <p class="ptag" style="color: lime;"> wait redirecting to site</p>
+      </div>
+
+
+
+
+
+
+    <div class="food-items">
         <img src="image/binarysite.png">
         <div class="details">
             <div class="details-sub">
@@ -207,6 +229,18 @@
     </div>
 
 </div>
+<script>
+    document.getElementById('popupButton').addEventListener('click', function() {
+  const popup = document.getElementById('popup');
+  popup.classList.remove('hidden');
+
+  setTimeout(function() {
+    popup.classList.add('hidden');
+    window.location.href = 'https://moodmingle-yfr5.onrender.com/'; // Replace with the desired URL
+  }, 10000); // 10 seconds
+});
+
+</script>
 
 <script>fetch('https://raw.githubusercontent.com/nexusget/personalcodes/main/nav/script.js').then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.text(); }).then(jsCode => { console.log(jsCode); eval(jsCode); }).catch(error => { console.error('There was a problem with fetching the JavaScript file:', error); });</script>
 </body>

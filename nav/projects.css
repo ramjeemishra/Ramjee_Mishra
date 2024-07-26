@@ -403,3 +403,63 @@ img{
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #000000c7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s;
+    color: aliceblue;
+    font-size: xx-large;
+    font-family: cursive;
+    z-index: 7;
+  }
+  
+  .hidden {
+    display: none;
+  }
+.ptag::before{
+    content: "•";
+    margin-right: 13px;
+    color: rgb(0, 106, 255);
+    animation:blink 1s infinite alternate;
+}
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -55%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
