@@ -1,260 +1,377 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title> 
-    <link rel="stylesheet" href="projects.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Projects</title>
     <link rel="shortcut icon" href="image/Screenshot_2023-08-30_181849-removebg-preview.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/7221c7cc44.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        @media (max-width:780px) {
+            .relative {
+                display: none;
+            }
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background: white;
+            margin-bottom: 22px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slide-image {
+            max-width: 100%;
+            height: 40dvh;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 18px;
+            z-index: 10;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .view-project-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .view-project-button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
 </head>
-<body>
-      <!-- for those who view my site code 😅😅 -->
 
-
-  <div class="custom-modal" id="custom-modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <p>No  don't try copy my site😂😂😂</p>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-  <nav>
-    <div class="logo"><span><b class="font-bold">&lt;/&gt;</b> Ram</span></div>
-    <input type="checkbox" id="click">
-    <!-- <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label> -->
-    <ul>
-      <li><a href="https://ramjeemishra.github.io/Ramjee_Mishra/" accesskey="b">Home</a></li>
-      <li><a href="https://ramjeemishra.github.io/Ramjee_Mishra/nav/projects.html">Projects</a></li>
-      <li><a href="https://ramjeemishra.github.io/comp/" accesskey="c">Contact me</a></li>
-    </ul>
-  </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-<div class="main">
-
- 
-
-<body>
-  <div class="menu">
-    <div class="food-items">
-        <img src="image/atom.gif">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Function of an Atom</h5>
+<body class="bg-gray-900 text-gray-300">
+    <div class="md:flex h-screen">
+        <!-- Main Content -->
+        <div class="flex-1 p-4 md:pl-24">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-8 space-y-4 md:space-y-0"
+                style="position: fixed;padding-left: 12px; padding-top: 7px; width: 91dvw;border-radius: 10px; background: rgb(99 99 99 / 20%); z-index: 45;">
+                <div class="flex items-center space-x-4">
+                    <img alt="User avatar" class="rounded-full" height="40"
+                        src="https://storage.googleapis.com/a1aa/image/X5JzVqBIqma5OteJmWrLrqebytljVbjOO89Ganola7D8eTZnA.jpg"
+                        width="40" />
+                    <div>
+                        <h1 class="text-xl font-semibold text-white">Hi<span class="wave">👋</span></h1>
+                        <p class="text-gray-400">Welcome! To my projects.</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4 search-bar">
+                    <div class="relative">
+                        <input class="bg-gray-800 rounded-full px-4 py-2 pl-10 text-gray-300 placeholder-gray-500"
+                            placeholder="Search projects..." type="text" />
+                        <i class="fas fa-search absolute left-3 top-2 text-gray-500"></i>
+                    </div>
+                </div>
             </div>
-            <p>Explore the hidden world of atoms through captivating 3D visualizations, unraveling the intricate dance of electrons and unveiling the essence of carbon's atomic structure on our interactive platform.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/Carbon-structure/' ">Vew site</button>
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8" style="margin-top: 12dvh;">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-white">3</h2>
+                    <p class="text-gray-400">AI Projects</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-white">1</h2>
+                    <p class="text-gray-400">In Progress (Text 2 Image)</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-white">15</h2>
+                    <p class="text-gray-400">Concepts Ready</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-white">11</h2>
+                    <p class="text-gray-400">Live Projects</p>
+                </div>
+            </div>
+            <!-- Project Overview -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-white mb-2">MoodMingle</h3>
+                    <p class="text-gray-400 mb-4">Mood-based social networking with live chat.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img alt="Team member" class="rounded-full mr-2" height="30"
+                                src="https://storage.googleapis.com/a1aa/image/Hn0U66UgFEI4HNA3AO84laGpj31RnGfVYRQXBfuqY3r6eTZnA.jpg"
+                                width="30" />
+                        </div>
+                        <div class="text-right">
+                            <h4 class="text-xl font-semibold text-white">55%</h4>
+                            <p class="text-gray-400">30 Tasks</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold text-white mb-2">Nexus</h3>
+                    <p class="text-gray-400 mb-4">A project to experiment with AI-generated text capabilities.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img alt="Team member" class="rounded-full mr-2" height="30"
+                                src="https://storage.googleapis.com/a1aa/image/Hn0U66UgFEI4HNA3AO84laGpj31RnGfVYRQXBfuqY3r6eTZnA.jpg"
+                                width="30" />
+                        </div>
+                        <div class="text-right">
+                            <h4 class="text-xl font-semibold text-white">70%</h4>
+                            <p class="text-gray-400">45 Tasks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider bg-gray-800">
+                    <div class="slide active">
+                        <img src="image/allans.png" alt="Project 1" class="slide-image">
+                        <h3><code> All (HSC) answers</code></h3>
+                        <a href="https://ramjeemishra.github.io/SSC-HSC_ans/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/atom.gif" alt="Project 2" class="slide-image">
+                        <h3><code>Function of an Carbon Atom</code></h3>
+                        <a href="https://ramjeemishra.github.io/Carbon-structure/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/createpassword.png" alt="Project 3" class="slide-image">
+                        <h3><code>Check your password strength</code></h3>
+                        <a href="https://createnewpassword.netlify.app" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/yearcal.png" alt="Project 4" class="slide-image">
+                        <h3><code>Age calculator</code></h3>
+                        <a href="https://ramjeemishra.github.io/Year-calculator/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/shayarii.png" alt="Project 5" class="slide-image">
+                        <h3><code>The shayari section</code></h3>
+                        <a href="https://shayarisection.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/binarysite.png" alt="Project 6" class="slide-image">
+                        <h3><code>Text to binary "vice-versa"</code></h3>
+                        <a href="https://ttobinary.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/editor.png" alt="Project 7" class="slide-image">
+                        <h3><code>Edit or run your code</code></h3>
+                        <a href="https://codeeditoram.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/ticfav.png" alt="Project 8" class="slide-image">
+                        <h3><code>Tic-Tac-Toe</code></h3>
+                        <a href="https://ramjeemishra.github.io/Tic-tac-toe/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/calcu.png" alt="Project 9" class="slide-image">
+                        <h3><code>Calculator</code></h3>
+                        <a href="https://ramjeemishra.github.io/new-calculator/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/daily.png" alt="Project 10" class="slide-image">
+                        <h3><code>Daily_Task</code></h3>
+                        <a href="https://ramjeemishra.github.io/Daily-task/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/moodmingle.png" alt="Project 11" class="slide-image">
+                        <h3><code>MoodMingle</code></h3>
+                        <a href="https://moodmingle-yfr5.onrender.com/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                    <div class="slide bg-gray-800">
+                        <img src="image/cloc.gif" alt="Project 12"
+                            class="slide-image">
+                        <h3><code>Clock</code></h3>
+                        <a href="https://ramjeemishra.github.io/C-lock/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <!-- Additional Sections ... -->
+            <!-- Task Progress and Daily Task -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold">Task Progress</h3>
+                        <select class="bg-gray-200 rounded-full px-4 py-2">
+                            <option>Weekly</option>
+                            <option>Monthly</option>
+                        </select>
+                    </div>
+                    <div class="flex justify-between mb-4">
+                        <div class="text-center">
+                            <h4 class="text-xl font-semibold">800h</h4>
+                            <p class="text-gray-500">Hours Dedicated</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-semibold">54</h4>
+                            <p class="text-gray-500">Articles Read</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-semibold">18</h4>
+                            <p class="text-gray-500">Modules Completed</p>
+                        </div>
+                    </div>
+                    <div class="h-32">
+                        <canvas id="taskProgressChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-semibold">Daily Task</h3>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg shadow-md">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="text-lg font-semibold">11:00 PM</h4>
+                                    <p class="text-gray-500">Integrate animations for the chat feature.</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="text-lg font-semibold">11:30 PM</h4>
+                                    <p class="text-gray-500">Implement Firebase login functionality for user authentication. "other security features"</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="text-lg font-semibold">1:00 AM</h4>
+                                    <p class="text-gray-500">Upgrade existing features and enhance user experience.</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="text-lg font-semibold">2:00 AM</h4>
+                                    <p class="text-gray-500">Read documentation for new tools and techniques.</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="text-lg font-semibold">3:00 AM</h4>
+                                    <p class="text-gray-500">Study time 😅</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Notification -->
+            <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-lg font-semibold">Notification</h3>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-calendar-alt text-gray-500 text-xl mr-4"></i>
+                        <p class="text-gray-500">Meeting today at 5 pm with MoodMingle team.</p>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope text-gray-500 text-xl mr-4"></i>
+                        <p class="text-gray-500">Review feedback on Nexus design.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div class="food-items">
-        <img src="image/allans.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>All (HSC) answers</h5>
-            </div>
-            <p>Unlock comprehensive learning with our all-inclusive website, offering in-depth subject answers and an extensive array of supplementary questions to further enhance your understanding and mastery of each topic.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/SSC-HSC_ans/' ">Vew site</button>
-        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Sample data and config for chart
+        const ctx = document.getElementById('taskProgressChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                datasets: [{
+                    label: 'Hours Dedicated',
+                    data: [2, 4, 3, 5, 4, 6, 3],
+                    borderColor: '#7C3AED',
+                    backgroundColor: 'rgba(124, 58, 237, 0.2)',
+                    fill: true,
+                    lineTension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
 
+        let currentSlide = 0;
 
-    <div class="food-items">
-        <img src="image/shayarii.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>The shayari section</h5>
-            </div>
-            <p>Share your shayari's with others</p>
-            <button onclick="location.href='https://shayarisection.netlify.app/' ">Vew site</button>
-        </div>
-    </div>
+        function changeSlide(direction) {
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
 
+            slides[currentSlide].classList.remove('active');
 
-    <div class="food-items">
-        <img src="image/editor.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Edit or run your code</h5>
-            </div>
-            <p>This site will help you to build you own code without downloading any softwere</p>
-            <button onclick="location.href='https://codeeditoram.netlify.app/' ">Vew site</button>
-        </div>
-    </div>
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-    <div class="food-items">
-        <img src="image/moodmingle.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>MoodMingle</h5>
-            </div>
-            <p>Create your own password-protected chat room, ensuring your conversations remain confidential. Share your thoughts, feelings, and experiences with your matched partner, knowing you're in a safe and private space.
-            </p>
-            <button id="popupButton">Vew site</button>
-        </div>
-    </div>
+            slides[currentSlide].classList.add('active');
 
-    <div id="popup" class="popup hidden">
-        <p>This site has backend work, so it can take some minutes to open</p>
-        <p class="ptag" style="color: lime;"> wait redirecting to site</p>
-      </div>
+            const slider = document.querySelector('.slider');
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
 
-
-
-
-
-
-    <div class="food-items">
-        <img src="image/binarysite.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Text to binary "vice-versa"</h5>
-            </div>
-            <p>Send msg in binary to make it little secure🫣🫣</p>
-            <button onclick="location.href='https://ttobinary.netlify.app/' ">Vew site</button>
-        </div>
-    </div>
-
-    <div class="food-items">
-        <img src="image/createpassword.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Check your password strength</h5>
-            </div>
-            <p>This site will help you to build password or check tour password strength</p>
-            <button onclick="location.href='https://createnewpassword.netlify.app' ">Vew site</button>
-        </div>
-    </div>
-
-
-    <div class="food-items">
-        <img src="image/calcu.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Calculator</h5>
-            </div>
-            <p>Introducing a versatile online calculator, providing quick and accurate solutions for all your mathematical needs, from simple calculations to complex equations.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/new-calculator/' ">Vew site</button>
-        </div>
-    </div>
-
-    <div class="food-items">
-        <img src="image/yearcal.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Age calculator</h5>
-            </div>
-            <p>Discover your precise age with our user-friendly online age calculator, effortlessly determining the years, months, and days since your birthdate, and enabling you to stay connected with the passage of time.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/Year-calculator/' ">Vew site</button>
-        </div>
-    </div>
-
-    <div class="food-items">
-        <img src="image/cloc.gif">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Clock</h5>
-            </div>
-            <p>Experience the essence of time with our elegant online clock, offering real-time precision to keep you in sync with every moment, whether it's for scheduling, productivity, or simply staying aware of the hours as they unfold.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/C-lock/' ">Vew site</button>
-        </div>
-    </div>
-
-    <div class="food-items">
-        <img src="image/ticfav.png">
-        <div class="details">
-            <div class="details-sub">
-                <h5>Tic-Tac-Toe</h5>
-            </div>
-            <p>Immerse yourself in the classic game of Tic Tac Toe, now with an engaging twist – challenge our AI-powered bot and test your strategic skills as you attempt to outmaneuver its calculated moves in this timeless battle of Xs and Os.</p>
-            <button onclick="location.href='https://ramjeemishra.github.io/Tic-tac-toe/' ">Vew site</button>
-        </div>
-    </div>
-
-
-    <div class="food-items">
-      <img src="image/daily.png">
-      <div class="details">
-          <div class="details-sub">
-              <h5>Daily_Task</h5>
-          </div>
-          <p>Elevate your productivity with our daily task manager, a dynamic tool designed to help you organize your activities, set priorities, and achieve your goals efficiently, ensuring each day is a step closer to success.</p>
-          <button onclick="location.href='https://ramjeemishra.github.io/Daily-task/' ">Vew site</button>
-      </div>
-  </div>
-
-
-
-
-<!-- //somethin personal🥰🥰🥰// -->
-
-
-  <div class="container">
-
-
-    
-    <div id="content" class="hidden">
-        <!-- Your protected content here -->
-         <div class="food-items">
-      <img src="image/CRU.png">
-      <div class="details">
-          <div class="details-sub">
-              <h5>For my crush</h5>
-          </div>
-          <p>"Wishing a spectacular birthday to the one who consistently inspires awe - may your day be as remarkable as the impression you've left on my heart."</p>
-          <button onclick="location.href='https://ramjeemishra.github.io/my-crush/' ">Vew site</button>
-      </div>
-  </div>
-
-
-
-</div>
-
-    </div>
-    <div id="password-form">
-        <label for="password" >Enter Password:</label>
-        <input  type="password" id="password" placeholder="personal🥰🥰🥰" />
-        <button id="submit-button" accesskey="2" >Submit</button>
-    </div>
-
-</div>
-<script>
-    document.getElementById('popupButton').addEventListener('click', function() {
-  const popup = document.getElementById('popup');
-  popup.classList.remove('hidden');
-
-  setTimeout(function() {
-    popup.classList.add('hidden');
-    window.location.href = 'https://moodmingle-yfr5.onrender.com/'; // Replace with the desired URL
-  }, 10000); // 10 seconds
-});
-
-</script>
-
-<script>fetch('https://raw.githubusercontent.com/nexusget/personalcodes/main/nav/script.js').then(response => { if (!response.ok) { throw new Error('Network response was not ok'); } return response.text(); }).then(jsCode => { console.log(jsCode); eval(jsCode); }).catch(error => { console.error('There was a problem with fetching the JavaScript file:', error); });</script>
+        // Optional: Auto-slide every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
 </body>
+
 </html>
