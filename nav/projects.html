@@ -89,6 +89,49 @@
             background-color: #45a049;
         }
 
+
+
+
+        .left-anime {
+            animation: slideRight 2s ease-in-out;
+            animation-timeline: view();
+            animation-range: entry cover 20%;
+        }
+
+        .right-anime {
+            animation: slideleft 2.2s ease-in-out;
+            animation-timeline: view();
+            animation-range: entry cover 20%;
+        }
+
+        .right-animee {
+            animation: slideleft 2.2s ease-in-out;
+            animation-timeline: view();
+            animation-range: entry cover 15%;
+        }
+        @keyframes slideleft {
+            from {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                opacity: 0.5;
+                transform: translateX(-35%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
     </style>
 </head>
 
@@ -137,7 +180,7 @@
             </div>
             <!-- Project Overview -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md left-anime">
                     <h3 class="text-lg font-semibold text-white mb-2">MoodMingle</h3>
                     <p class="text-gray-400 mb-4">Mood-based social networking with live chat.</p>
                     <div class="flex items-center justify-between">
@@ -152,7 +195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md right-anime">
                     <h3 class="text-lg font-semibold text-white mb-2">Nexus</h3>
                     <p class="text-gray-400 mb-4">A project to experiment with AI-generated text capabilities.</p>
                     <div class="flex items-center justify-between">
@@ -168,77 +211,99 @@
                     </div>
                 </div>
             </div>
-            <div class="slider-container">
+            <div class="slider-container left-anime">
                 <div class="slider bg-gray-800">
                     <div class="slide active">
                         <img src="image/allans.png" alt="Project 1" class="slide-image">
                         <h3><code> All (HSC) answers</code></h3>
-                        <a href="https://ramjeemishra.github.io/SSC-HSC_ans/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/SSC-HSC_ans/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/atom.gif" alt="Project 2" class="slide-image">
                         <h3><code>Function of an Carbon Atom</code></h3>
-                        <a href="https://ramjeemishra.github.io/Carbon-structure/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/Carbon-structure/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/createpassword.png" alt="Project 3" class="slide-image">
                         <h3><code>Check your password strength</code></h3>
-                        <a href="https://createnewpassword.netlify.app" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://createnewpassword.netlify.app"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/yearcal.png" alt="Project 4" class="slide-image">
                         <h3><code>Age calculator</code></h3>
-                        <a href="https://ramjeemishra.github.io/Year-calculator/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/Year-calculator/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/shayarii.png" alt="Project 5" class="slide-image">
                         <h3><code>The shayari section</code></h3>
-                        <a href="https://shayarisection.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://shayarisection.netlify.app/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/binarysite.png" alt="Project 6" class="slide-image">
                         <h3><code>Text to binary "vice-versa"</code></h3>
-                        <a href="https://ttobinary.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ttobinary.netlify.app/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/editor.png" alt="Project 7" class="slide-image">
                         <h3><code>Edit or run your code</code></h3>
-                        <a href="https://codeeditoram.netlify.app/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://codeeditoram.netlify.app/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/ticfav.png" alt="Project 8" class="slide-image">
                         <h3><code>Tic-Tac-Toe</code></h3>
-                        <a href="https://ramjeemishra.github.io/Tic-tac-toe/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/Tic-tac-toe/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/calcu.png" alt="Project 9" class="slide-image">
                         <h3><code>Calculator</code></h3>
-                        <a href="https://ramjeemishra.github.io/new-calculator/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/new-calculator/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/daily.png" alt="Project 10" class="slide-image">
                         <h3><code>Daily_Task</code></h3>
-                        <a href="https://ramjeemishra.github.io/Daily-task/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/Daily-task/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
                         <img src="image/moodmingle.png" alt="Project 11" class="slide-image">
                         <h3><code>MoodMingle</code></h3>
-                        <a href="https://moodmingle-yfr5.onrender.com/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://moodmingle-yfr5.onrender.com/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                     <div class="slide bg-gray-800">
-                        <img src="image/cloc.gif" alt="Project 12"
-                            class="slide-image">
+                        <img src="image/cloc.gif" alt="Project 12" class="slide-image">
                         <h3><code>Clock</code></h3>
-                        <a href="https://ramjeemishra.github.io/C-lock/" class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300" target="_blank">View Project</a>
+                        <a href="https://ramjeemishra.github.io/C-lock/"
+                            class="view-project-button mt-4 bg-gray-700 text-white py-2 px-4 rounded hover:bg-gray-500 transition duration-300"
+                            target="_blank">View Project</a>
                     </div>
                 </div>
                 <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
                 <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
-            <!-- Additional Sections ... -->
             <!-- Task Progress and Daily Task -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow left-anime">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-lg font-semibold">Task Progress</h3>
                         <select class="bg-gray-200 rounded-full px-4 py-2">
@@ -264,7 +329,7 @@
                         <canvas id="taskProgressChart"></canvas>
                     </div>
                 </div>
-                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+                <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow right-anime">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="text-lg font-semibold">Daily Task</h3>
                     </div>
@@ -279,7 +344,8 @@
                             <div class="flex justify-between items-center">
                                 <div>
                                     <h4 class="text-lg font-semibold">11:30 PM</h4>
-                                    <p class="text-gray-500">Implement Firebase login functionality for user authentication. "other security features"</p>
+                                    <p class="text-gray-500">Implement Firebase login functionality for user
+                                        authentication. "other security features"</p>
                                 </div>
                             </div>
                             <div class="flex justify-between items-center">
@@ -302,11 +368,11 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- Notification -->
-            <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow">
+            <div class="bg-gray-800 text-gray-400 p-6 rounded-lg shadow right-animee">
                 <div class="flex justify-between items-center mb-4">
                     <h3 class="text-lg font-semibold">Notification</h3>
                 </div>
